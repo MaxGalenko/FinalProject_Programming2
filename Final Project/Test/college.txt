@@ -1,3 +1,3 @@
-Teacher[[name=Max, age=18, gender=Male, email=Max@gmail.com, address=4690 av. Lapalme]speciality=Math, degree=PhD, isFullTime=true, hoursWorked=40]
+Teacher[[name=Max, age=18, gender=Male, email=Max@gmail.com, address=4690 av. Lapalme]speciality=Math, degree=PhD, isFullTime=true, hoursWorked=32]
 Teacher[[name=Bob, age=26, gender=Male, email=Bob@gmail.com, address=4378 av. Plamondon]speciality=History, degree=Master, isFullTime=false, hoursWorked=34]
-Staff[[name=Jhonny, age=58, gender=Male, email=Jhonny@gmail.com, address=2357 MacDonald Street]duty=Janitor, workload=40]
+Staff[[name=Jhonny, age=58, gender=Male, email=Jhonny@gmail.com, address=2357 MacDonald Street]duty=Janitor, workload=32]

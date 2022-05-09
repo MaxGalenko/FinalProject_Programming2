@@ -35,10 +35,14 @@ import java.util.ArrayList;
 public class Test {
 
     public static void main(String[] args) {
-        Teacher t1 = new Teacher("Math", "PhD", true, 40, "Max", 18, "Male", "Max@gmail.com", "4690 av. Lapalme");
-        Teacher t2 = new Teacher("History", "Master", false, 34, "Bob", 26, "Male", "Bob@gmail.com", "4378 av. Plamondon");
+        Teacher t1 = new Teacher("Math", "PhD", true, 32, "Max", 18, "Male", 
+                "Max@gmail.com", "4690 av. Lapalme");
         
-        Staff s1 = new Staff("Janitor", 40, "Jhonny", 58, "Male", "Jhonny@gmail.com", "2357 MacDonald Street");
+        Teacher t2 = new Teacher("History", "Master", false, 34, "Bob", 26, 
+                "Male", "Bob@gmail.com", "4378 av. Plamondon");
+        
+        Staff s1 = new Staff("Janitor", 32, "Jhonny", 58, "Male", 
+                "Jhonny@gmail.com", "2357 MacDonald Street");
         
         ArrayList<Teacher> ts = new ArrayList<>();
         
@@ -71,5 +75,8 @@ public class Test {
         } catch (IOException e) {
             System.out.println("Failed to write to the file");
         }
+        
+        System.out.println(s1.computePayRoll());
+        System.out.println(t1.computePayRoll());
     }
 }

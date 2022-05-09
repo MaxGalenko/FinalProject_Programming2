@@ -60,8 +60,15 @@ public class Staff extends Person implements PayRoll {
     
     @Override
     public double computePayRoll() {
-        if (workload > 40)
+        if (workload > 40) {
             System.out.println("Workload cannot exceed 40 hours");
+            return 0;
+        }
+        
+        if (workload < 0) {
+            System.out.println("Workload cannot be smaller than 0 hours");
+            return 0;
+        }
         
         return workload * 32 * 2 * 0.75;
     }

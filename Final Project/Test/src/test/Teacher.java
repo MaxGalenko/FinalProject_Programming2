@@ -82,13 +82,18 @@ public class Teacher extends Person implements PayRoll {
             case "bachelor":
                 degreeRate = 42;
                 break;
+            default:
+                System.out.println("Invalid degree");
         }
         
         if (isFullTime == true)
             payRoll = 32 * degreeRate * 2 * 0.85;
         
-        if (isFullTime == false)
+        if (isFullTime == false && hoursWorked >= 0)
             payRoll = hoursWorked * degreeRate * 2 * 0.76;
+        
+        if (isFullTime == false && hoursWorked < 0)
+            System.out.println("Hours worked cannot be smaller than 0 hours");
         
         return payRoll;
     }
